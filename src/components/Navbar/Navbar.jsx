@@ -6,12 +6,10 @@ import menu_icon from '../../assets/menu-icon.png'
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
-  console.log(sticky);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
       window.scrollY > 50 ? setSticky(true) : setSticky(false);
       
     });
