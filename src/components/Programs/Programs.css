@@ -1,0 +1,39 @@
+.programs {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.program img{
+    width : 100%;
+    border-radius: 10px;
+    display: block;
+}
+.program {
+    flex-basis: 31%;
+    position: relative;
+}
+.caption img{
+    width : 60px;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    inset : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color : white;
+    background : rgba(0,15,152,0.3);
+    opacity: 0;
+    padding-top: 70%;
+    transition: padding-top .4s;
+}
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
